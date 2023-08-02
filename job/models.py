@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from django.contrib.auth.models import User
 
 '''
 django model fileds:
@@ -19,6 +20,7 @@ def image_upload(instance, filename):
 
 # Create your models here.
 class Job(models.Model): #table
+    owner = models.ForeignKey(User, on_delete= models.CASCADE)
     title = models.CharField(max_length=100)    #column
     #location
     job_type = models.CharField(max_length=15, choices= JOB_TYPE)
@@ -28,7 +30,7 @@ class Job(models.Model): #table
     salary = models.IntegerField(default=0)
     experience = models.IntegerField(default=0)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
-    image = models.ImageField(upload_to=image_upload)
+    image = models.ImageField(upload_to=image_upload, null=True)
 
     slug = models.SlugField(blank=True, null= True)
 
