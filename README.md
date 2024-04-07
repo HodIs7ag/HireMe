@@ -13,4 +13,4 @@
 ```pip install -r requirements.txt```
 - launch django server
 ```python manage.py runserver```
-- open browser and click [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+- open browser and insert [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
