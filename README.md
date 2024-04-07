@@ -1,14 +1,16 @@
-﻿# django-job-board
+﻿# HireMe
 
-## Installation
+## Get Started
 - Clone the repository
-```git clone https://github.com/HodIs7ag/django-job-board.git```
+```git clone https://github.com/HodIs7ag/HireMe.git```
 - Unzipp the folder and open command prompt
-```cd django-job-board```
+```cd HireMe```
+- create Virtual environment
+  ```python -m venv venv```
 - Setup venv or activate the pre-installed using:
-```.\env\Scripts\activate```
-- install the required packages
+```.\venv\Scripts\activate```
+- install project dependencies
 ```pip install -r requirements.txt```
-- Run django server
+- launch django server
 ```python manage.py runserver```
-- open browser and click [Server](http://127.0.0.1:8000/)
+- open browser and click [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
